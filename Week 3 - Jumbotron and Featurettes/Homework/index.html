@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    
+
+<head>
+
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 
@@ -10,31 +11,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <!-- Icon Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Jumbotron, featurettes, lists and tables</title>
-   
+
     <style>
-         body {font-family: 'Oswald';}
-        .navbar {overflow: hidden; position: fixed; bottom: 0; width: 100%;}
-        .navbar-brand img{max-width: 200px;}
-        .jumbotron{background-size: cover; background-position: center;}
+        h1,
+        h2 {
+            font-family: 'Oswald';
+            text-align: left;
+        }
+
+        h1 {
+            padding: 0% 0% 0% 0%;
+        }
+
+        h2 {
+            padding: 3% 0% 2% 0%;
+        }
+
+        h3,
+        p {
+            font-family: 'Helvetica Neue';
+            text-align: justify;
+            padding: 0% 0% 1% 0%;
+        }
+
+        h3 {
+            padding: 0% 0% 1% 0%;
+        }
+
+        p {
+            padding: 0% 0% 3% 0%;
+        }
+
+        .navbar {
+            overflow: hidden;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .navbar-brand img {
+            max-width: 200px;
+        }
+
+        .nav-item {
+            font-family: 'Oswald';
+        }
+
+        .jumbotron {
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* For Centered Vertical Alignment */
+        .align-items-center {
+            -ms-flex-align: center !important;
+            align-items: center !important;
+        }
+
+        /* For Centered Vertical Alignment */
+        .d-flex {
+            display: -ms-flexbox !important;
+            display: flex !important;
+        }
     </style>
 
-  </head>
+</head>
 
-  <body>
+<body>
 
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid" style="background-image: url('assets/cover.png')">
         <div class="container">
             <h1 class="display-3 text-warning">Curated By Our Baristas</h1>
-            <p class="lead text-light">Our baristas recommend their favorite menu items from Espresso Cafe.</p>
+            <h3 class="lead text-light">Our baristas recommend their favorite menu items from Espresso Cafe.</h3>
             <a class="btn btn-warning btn-lg" href="#" role="button">Explore Menu</a>
         </div>
+    </div>
+
+    <!-- Featurettes -->
+    <div class="container">
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 d-flex align-items-center">
+                <div>
+                    <h2 class="featurette-heading">Try our new seasonal drinks. <span class="text-muted">They will blow
+                            your mind.</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+                        tellus ac cursus commodo.</p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="assets/featurette1.jpg" alt="New Seasonal Drinks" />
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2 d-flex align-items-center">
+                <div>
+                    <h2 class="featurette-heading">Happy hour is back! <span class="text-muted">Bring a friend.</span>
+                    </h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+                        tellus ac cursus commodo.</p>
+                </div>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="assets/featurette2.jpg" alt="Happy Hour Coffee 2x1" />
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 d-flex align-items-center">
+                <div>
+                    <h2 class="featurette-heading">Visit our new location. <span class="text-muted">Espresso Cafe Abbot
+                            Kinney.</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+                        tellus ac cursus commodo.</p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="assets/featurette3.jpg" alt="New Location" />
+            </div>
+        </div>
+        <hr class="featurette-divider">
     </div>
 
     <!-- Navbar -->
@@ -42,29 +150,37 @@
         <a class="navbar-brand" href="#">
             <img src="assets/logo.png" alt="Espresso Cafe Logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav mx-auto">
-            <a class="nav-item nav-link active" href="#">HOME<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">ABOUT</a>
-            <a class="nav-item nav-link " href="#">MENU</a>
-            <a class="nav-item nav-link " href="#">LOCATIONS</a>
-          </div>
-		</ul>
-		<ul class="nav navbar-nav navbar-right">
-			<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook"></i></a></li>
-			<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-twitter"></i></a></li>
-			<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-instagram"></i></a></li>
-        </ul>
+            <div class="navbar-nav mx-auto">
+                <a class="nav-item nav-link active" href="#">HOME<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">ABOUT</a>
+                <a class="nav-item nav-link " href="#">MENU</a>
+                <a class="nav-item nav-link " href="#">LOCATIONS</a>
+            </div>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-instagram"></i></a></li>
+            </ul>
         </div>
     </nav>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
