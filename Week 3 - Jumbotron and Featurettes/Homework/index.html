@@ -21,7 +21,8 @@
 
     <style>
         h1,
-        h2 {
+        h2,
+        h4 {
             font-family: 'Oswald';
             text-align: left;
         }
@@ -43,6 +44,10 @@
 
         h3 {
             padding: 0% 0% 1% 0%;
+        }
+
+        h5 {
+            font-size: medium;
         }
 
         p {
@@ -79,6 +84,17 @@
         .d-flex {
             display: -ms-flexbox !important;
             display: flex !important;
+        }
+
+        table tr {
+            border-bottom: thin solid;
+            border-top: thin solid;
+            border-color: lightgray
+        }
+
+
+        table td {
+            padding: 2vw;
         }
     </style>
 
@@ -144,6 +160,58 @@
         </div>
         <hr class="featurette-divider">
     </div>
+
+
+
+    <!-- Table -->
+    <div class="container">
+
+        <h1 style="font-size: 70px; text-align: center; padding: 3% 0% 3% 0;">MENU</h1>
+        <table>
+            <tr>
+                <td style="width:45vw">
+                    <h4>Iced Coffee<h4>
+                            <h5 class="text-muted">Our original and refresshing Iced Coffee.</h5>
+                </td>
+                <td style="width:15vw;">
+                    <h4>US$3.15</h4>
+                </td>
+                <td style="width:40vw"><img class="img-fluid" src="assets/icedcoffee.jpg" alt="New Location" /></td>
+            </tr>
+            <tr>
+                <td style="width:45vw">
+                    <h4>Cappuccino<h4>
+                            <h5 class="text-muted">Prepared with our house beans and steamed milk foam.</h5>
+                </td>
+                <td style="width:15vw">
+                    <h4>US$4.25</h4>
+                </td>
+                <td style="width:40vw"><img class="img-fluid" src="assets/cappuccino.jpg" alt="New Location" /></td>
+            </tr>
+            <tr>
+                <td style="width:45vw">
+                    <h4>Bagels<h4>
+                            <h5 class="text-muted">Fresh baked regular, everything and blueberry bagels.</h5>
+                </td>
+                <td style="width:15vw">
+                    <h4>US$1.25</h4>
+                </td>
+                <td style="width:40vw"><img class="img-fluid" src="assets/bagel.jpg" alt="New Location" /></td>
+            </tr>
+            <tr>
+                <td style="width:45vw">
+                    <h4>Muffins<h4>
+                            <h5 class="text-muted">Fresh baked banana-nut and blueberry muffins.</h5>
+                </td>
+                <td style="width:15vw">
+                    <h4>US$2.95</h4>
+                </td>
+                <td style="width:40vw"><img class="img-fluid" src="assets/muffin.jpg" alt="New Location" /></td>
+            </tr>
+        </table>
+
+    </div>
+
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-danger">
