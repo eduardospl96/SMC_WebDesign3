@@ -19,10 +19,6 @@
             max-width: 150px;
         }
 
-        h1 {
-            text-align: right;
-        }
-
         h3 {
             text-align: right;
             margin: 10px 0px 0px 0px;
@@ -37,9 +33,20 @@
             margin: 20px 0px 0px 0px;
         }
 
-        .btn1{ margin: 0px 15px 50px 0px;}
+        .btn1 {
+            margin: 0px 15px 50px 0px;
+        }
     
+        .btn2,
+        .btn3,
+        .btn4,
+        .btn5,
+        .btn6{
+            background-color: black;
+            margin: 15px 0px 0px 0px;
+        }
     </style>
+
     <title>Interactive Forms</title>
 </head>
 
@@ -92,7 +99,7 @@
                             <h3 class="card-title text-body"><strong>Light Denim Jeans</strong></h3>
                         </div>
                         <div class="card-footer">
-                            <h1 class="text-body">$40</h1>
+                            <h1 class="text-body text-right">$40</h1>
                         </div>
                     </div>
                 </div>
@@ -103,7 +110,7 @@
                             <h3 class="card-title text-body"><strong>Black Denim Shorts</strong></h3>
                         </div>
                         <div class="card-footer">
-                            <h1 class="text-body">$30</h1>
+                            <h1 class="text-body text-right">$30</h1>
                         </div>
                     </div>
                 </div>
@@ -114,7 +121,7 @@
                             <h3 class="card-title text-body"><strong>Plain White Shirt</strong></h3>
                         </div>
                         <div class="card-footer">
-                            <h1 class="text-body">$15</h1>
+                            <h1 class="text-body text-right">$15</h1>
                         </div>
                     </div>
                 </div>
@@ -125,21 +132,398 @@
                             <h3 class="card-title text-body"><strong>Gray Shirt With Pocket</strong></h3>
                         </div>
                         <div class="card-footer">
-                            <h1 class="text-body">$20</h1>
+                            <h1 class="text-body text-right">$20</h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Checkout Button -->
         <div class="container-fluid">
-            <!-- Buttons -->
-            <button type="button" class=" btn1 btn btn-warning btn-lg float-right"><h2>Proceed To Checkout</h2></button> 
+            <button type="button" class=" btn1 btn btn-warning btn-lg float-right">
+                <h2>Proceed To Checkout</h2>
+            </button>
         </div>
 
+        <!-- Form -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form class="needs-validation" novalidate>
+                        <h1 class="display-3">Checkout</h1>
+                        <!-- Shipping Address -->
+                        <div class="shipping">
+                            <h4>Shipping Address</h4>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationFirstName">First Name</label>
+                                    <input type="text" class="form-control" id="validationFirstName"
+                                        placeholder="First Name" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your First Name.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationLastName">Last Name</label>
+                                    <input type="text" class="form-control" id="validationLastName"
+                                        placeholder="Last Name" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your Last Name.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationAddress">Address</label>
+                                    <input type="text" class="form-control" id="validationAddress"
+                                        placeholder="1234 Main St" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your First Name.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationAddress2">Address 2</label>
+                                    <input type="text" class="form-control" id="validationAddress2"
+                                        placeholder="Apartment, studio, or floor" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your Last Name.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCity">City</label>
+                                    <input type="text" class="form-control" id="validationCity" placeholder="City"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid city.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationState">State</label>
+                                    <select class="custom-select" id="validationState" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option value="1">AL</option>
+                                        <option value="2">AK</option>
+                                        <option value="3">AZ</option>
+                                        <option value="4">AR</option>
+                                        <option value="5">CA</option>
+                                        <option value="6">CO</option>
+                                        <option value="7">CT</option>
+                                        <option value="8">DE</option>
+                                        <option value="9">FL</option>
+                                        <option value="10">GA</option>
+                                        <option value="11">HI</option>
+                                        <option value="12">ID</option>
+                                        <option value="13">IL</option>
+                                        <option value="14">IN</option>
+                                        <option value="15">IA</option>
+                                        <option value="16">KS</option>
+                                        <option value="17">KY</option>
+                                        <option value="18">LA</option>
+                                        <option value="19">ME</option>
+                                        <option value="20">MD</option>
+                                        <option value="21">MA</option>
+                                        <option value="22">MI</option>
+                                        <option value="23">MN</option>
+                                        <option value="24">MS</option>
+                                        <option value="25">MO</option>
+                                        <option value="26">MT</option>
+                                        <option value="27">NE</option>
+                                        <option value="28">NV</option>
+                                        <option value="29">NH</option>
+                                        <option value="30">NJ</option>
+                                        <option value="31">NM</option>
+                                        <option value="32">NY</option>
+                                        <option value="33">NC</option>
+                                        <option value="34">ND</option>
+                                        <option value="35">OH</option>
+                                        <option value="36">OK</option>
+                                        <option value="37">OR</option>
+                                        <option value="38">PA</option>
+                                        <option value="39">RI</option>
+                                        <option value="40">SC</option>
+                                        <option value="41">SD</option>
+                                        <option value="42">TN</option>
+                                        <option value="43">TX</option>
+                                        <option value="44">UT</option>
+                                        <option value="45">VT</option>
+                                        <option value="46">VA</option>
+                                        <option value="47">WA</option>
+                                        <option value="48">WV</option>
+                                        <option value="49">WI</option>
+                                        <option value="50">WY</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid state.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationZip">Zip</label>
+                                    <input type="text" class="form-control" id="validationZip" placeholder="Zip"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid zip.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn2 btn btn-lg text-center text-light float-left" type="button">
+                                <h2>Back</h2>
+                            </button>
+                            <button class="btn3 btn btn-lg text-center text-light float-right" type="submit">
+                                <h2>Next</h2>
+                            </button>
+                        </div>
+                        <!-- Billing Address -->
+                        <div class="billing">
+                            <h4>Billing Address</h4>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">(Same As Billing)</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Other</label>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationFirstName2">First Name</label>
+                                    <input type="text" class="form-control" id="validationFirstName2"
+                                        placeholder="First Name" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your First Name.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationLastNameB">Last Name</label>
+                                    <input type="text" class="form-control" id="validationLastNameB"
+                                        placeholder="Last Name" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your Last Name.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationAddressB">Address</label>
+                                    <input type="text" class="form-control" id="validationAddressB"
+                                        placeholder="1234 Main St" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your First Name.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationAddress2B">Address 2</label>
+                                    <input type="text" class="form-control" id="validationAddress2B"
+                                        placeholder="Apartment, studio, or floor" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your Last Name.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCityB">City</label>
+                                    <input type="text" class="form-control" id="validationCityB" placeholder="City"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid city.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationStateB">State</label>
+                                    <select class="custom-select" id="validationStateB" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option value="1">AL</option>
+                                        <option value="2">AK</option>
+                                        <option value="3">AZ</option>
+                                        <option value="4">AR</option>
+                                        <option value="5">CA</option>
+                                        <option value="6">CO</option>
+                                        <option value="7">CT</option>
+                                        <option value="8">DE</option>
+                                        <option value="9">FL</option>
+                                        <option value="10">GA</option>
+                                        <option value="11">HI</option>
+                                        <option value="12">ID</option>
+                                        <option value="13">IL</option>
+                                        <option value="14">IN</option>
+                                        <option value="15">IA</option>
+                                        <option value="16">KS</option>
+                                        <option value="17">KY</option>
+                                        <option value="18">LA</option>
+                                        <option value="19">ME</option>
+                                        <option value="20">MD</option>
+                                        <option value="21">MA</option>
+                                        <option value="22">MI</option>
+                                        <option value="23">MN</option>
+                                        <option value="24">MS</option>
+                                        <option value="25">MO</option>
+                                        <option value="26">MT</option>
+                                        <option value="27">NE</option>
+                                        <option value="28">NV</option>
+                                        <option value="29">NH</option>
+                                        <option value="30">NJ</option>
+                                        <option value="31">NM</option>
+                                        <option value="32">NY</option>
+                                        <option value="33">NC</option>
+                                        <option value="34">ND</option>
+                                        <option value="35">OH</option>
+                                        <option value="36">OK</option>
+                                        <option value="37">OR</option>
+                                        <option value="38">PA</option>
+                                        <option value="39">RI</option>
+                                        <option value="40">SC</option>
+                                        <option value="41">SD</option>
+                                        <option value="42">TN</option>
+                                        <option value="43">TX</option>
+                                        <option value="44">UT</option>
+                                        <option value="45">VT</option>
+                                        <option value="46">VA</option>
+                                        <option value="47">WA</option>
+                                        <option value="48">WV</option>
+                                        <option value="49">WI</option>
+                                        <option value="50">WY</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid state.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationZipB">Zip</label>
+                                    <input type="text" class="form-control" id="validationZipB" placeholder="Zip"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid zip.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn4 btn btn-lg text-center text-light float-left" type="button">
+                                <h2>Back</h2>
+                            </button>
+                            <button class="btn5 btn btn-lg text-center text-light float-right" type="submit">
+                                <h2>Next</h2>
+                            </button>
+                        </div>
+                        <!-- Payment -->
+                        <div class="payment">
+                            <h4>Payment Information</h4>
+                            <div class="form-row">
+                                <div class="col-md-8 mb-3">
+                                    <label for="validationCardholder">Cardholder's Name (As it appears on card)</label>
+                                    <input type="text" class="form-control" id="validationCardholder"
+                                        placeholder="Name on Card" required>
+                                    <div class="invalid-feedback">
+                                        Please provide the Cardholder's Name.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationExpiration">Expiration Date</label>
+                                    <input type="text" class="form-control" id="validationExpiration"
+                                        placeholder="MM/YYYY" required>
+                                    <div class="invalid-feedback">
+                                        Please provide card's Expiration Date.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-8 mb-3">
+                                    <label for="validationCard">Credit/Debit Card Number</label>
+                                    <input type="text" class="form-control" id="validationCard"
+                                        placeholder="9999 9999 9999 9999" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your credit or debit card number.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCVV">Security Code</label>
+                                    <input type="text" class="form-control" id="validationCVV"
+                                        placeholder="CVV" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your card's CVV.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Agree to terms and conditions
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn6 btn btn-lg text-center text-light float-left" type="button">
+                                <h2>Back</h2>
+                            </button>
+                        </div>
+                        <div class="buy">
+                            <button class="btn btn-lg btn-warning text-center text-body float-right" style="margin-top: 15px;" type="submit"><h2>Buy</h2></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <!-- Buttons -->
-            <button type="button" class=" btn2 btn btn-lg text-center text-light" style="background-color:black;"><h2>Back</h2></button>
+
         </div>
     </main>
     <footer></footer>
@@ -167,6 +551,9 @@
                 $(".btn1").hide();
                 $(".btn2").show();
                 $(".card-deck").hide();
+                $(".billing").hide();
+                $(".buy").hide();
+                $(".payment").hide();
             });
             $(".btn2").click(function () {
                 $("form").hide();
@@ -174,8 +561,41 @@
                 $(".btn1").show();
                 $(".card-deck").show();
             });
+            $(".btn3").click(function () {
+                $(".shipping").hide();
+                $(".billing").show();
+                $(".payment").hide();
+                $(".btn2").hide();
+                $(".btn4").show();
+                $(".btn5").show();
+             });
+            $(".btn4").click(function () {
+                $(".shipping").show();
+                $(".billing").hide();
+                $(".payment").hide();
+                $(".btn2").show();
+                $(".btn4").hide();
+                $(".btn5").hide();
+            });
+            $(".btn5").click(function () {
+                $(".payment").show();
+                $(".billing").hide();
+                $(".btn4").hide();
+                $(".btn5").hide();
+                $(".btn6").show();
+                $(".buy").show();
+            });
+            $(".btn6").click(function () {
+                $(".payment").hide();
+                $(".billing").show();
+                $(".btn4").show();
+                $(".btn5").show();
+                $(".btn6").hide();
+                $(".buy").hide();
+            });
 
         });
+
     </script>
 
     <script>
@@ -195,7 +615,7 @@
                         form.classList.add('was-validated');
                     }, false);
                 });
-            }, false);
+            },  false);
         })();
     </script>
 </body>
