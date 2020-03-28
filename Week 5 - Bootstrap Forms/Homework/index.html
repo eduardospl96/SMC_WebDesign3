@@ -1,21 +1,203 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Styles -->
+    <style>
+        .navbar-brand img {
+            max-width: 150px;
+        }
+
+        h1 {
+            text-align: right;
+        }
+
+        h3 {
+            text-align: right;
+            margin: 10px 0px 0px 0px;
+        }
+
+        h4 {
+            display: inline-block;
+            margin: 20px 30px 20px 0px;
+        }
+
+        h5 {
+            margin: 20px 0px 0px 0px;
+        }
+
+        .btn1{ margin: 0px 15px 50px 0px;}
+    
+    </style>
     <title>Interactive Forms</title>
-  </head>
-  <body>
+</head>
+
+<body>
+    <header></header>
+    <main>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light" style="background-color:white;">
+            <a class="navbar-brand" href="#">
+                <img src="assets/PullAndBear-Black.png" alt="Pull & Bear Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-item nav-link" href="#"><strong>HOME</strong></span></a>
+                    <a class="nav-item nav-link" href="#"><strong>ABOUT</strong></span></a>
+                    <a class="nav-item nav-link" href="#" target="_blank"><strong>MAN</strong></a>
+                    <a class="nav-item nav-link" href="h#" target="_blank"><strong>WOMAN</strong></a>
+                    <a class="nav-item"><a href="#" class="nav-link active"><i class="fa fa-shopping-bag"></i></a></li>
+                </div>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-twitter"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Jumbotron -->
+        <div class="jumbotron jumbotron-fluid"
+            style="background-image: url('assets/cover.jpg'); background-size:cover; background-position: center;"
+            alt="Pride Flag Cover">
+            <div class="container">
+                <h1 class="display-1 text-light text-center">SHOPPING BAG</h1>
+            </div>
+        </div>
+
+        <!-- Card Deck -->
+        <div class="container-fluid">
+            <div class="card-deck">
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-5">
+                    <div class="card h-100">
+                        <img src="assets/card1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-body"><strong>Light Denim Jeans</strong></h3>
+                        </div>
+                        <div class="card-footer">
+                            <h1 class="text-body">$40</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-5">
+                    <div class="card h-100">
+                        <img src="assets/card2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-body"><strong>Black Denim Shorts</strong></h3>
+                        </div>
+                        <div class="card-footer">
+                            <h1 class="text-body">$30</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-5">
+                    <div class="card h-100">
+                        <img src="assets/card3.JPG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-body"><strong>Plain White Shirt</strong></h3>
+                        </div>
+                        <div class="card-footer">
+                            <h1 class="text-body">$15</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-5">
+                    <div class="card h-100">
+                        <img src="assets/card4.JPG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-body"><strong>Gray Shirt With Pocket</strong></h3>
+                        </div>
+                        <div class="card-footer">
+                            <h1 class="text-body">$20</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <!-- Buttons -->
+            <button type="button" class=" btn1 btn btn-warning btn-lg float-right"><h2>Proceed To Checkout</h2></button> 
+        </div>
+
+        <div class="container">
+            <!-- Buttons -->
+            <button type="button" class=" btn2 btn btn-lg text-center text-light" style="background-color:black;"><h2>Back</h2></button>
+        </div>
+    </main>
+    <footer></footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- JQuery For Show and Hide Buttons -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--Show and Hide Buttons -->
+    <script>
+        $(document).ready(function () {
+            $("form").hide();
+            $(".btn2").hide();
+            $(".btn1").click(function () {
+                $("form").show();
+                $(".btn1").hide();
+                $(".btn2").show();
+                $(".card-deck").hide();
+            });
+            $(".btn2").click(function () {
+                $("form").hide();
+                $(".btn2").hide();
+                $(".btn1").show();
+                $(".card-deck").show();
+            });
+
+        });
+    </script>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+
 </html>
