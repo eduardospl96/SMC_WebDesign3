@@ -36,12 +36,12 @@
         .btn1 {
             margin: 0px 15px 50px 0px;
         }
-    
+
         .btn2,
         .btn3,
         .btn4,
         .btn5,
-        .btn6{
+        .btn6 {
             background-color: black;
             margin: 15px 0px 0px 0px;
         }
@@ -300,17 +300,14 @@
                         <div class="billing">
                             <h4>Billing Address</h4>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                <label class="form-check-label" for="inlineCheckbox1">(Same As Billing)</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <label class="form-check-label" for="inlineCheckbox2">Other</label>
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"
+                                    onclick="copyInfo(this.form)">
+                                <label class="form-check-label" for="inlineCheckbox1">(Same As Shipping)</label>
                             </div>
                             <div class="form-row">
                                 <div class="col-md-6 mb-3">
-                                    <label for="validationFirstName2">First Name</label>
-                                    <input type="text" class="form-control" id="validationFirstName2"
+                                    <label for="validationFirstNameB">First Name</label>
+                                    <input type="text" class="form-control" id="validationFirstNameB"
                                         placeholder="First Name" required>
                                     <div class="invalid-feedback">
                                         Please provide your First Name.
@@ -489,8 +486,8 @@
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <label for="validationCVV">Security Code</label>
-                                    <input type="text" class="form-control" id="validationCVV"
-                                        placeholder="CVV" required>
+                                    <input type="text" class="form-control" id="validationCVV" placeholder="CVV"
+                                        required>
                                     <div class="invalid-feedback">
                                         Please provide your card's CVV.
                                     </div>
@@ -515,7 +512,10 @@
                             </button>
                         </div>
                         <div class="buy">
-                            <button class="btn btn-lg btn-warning text-center text-body float-right" style="margin-top: 15px;" type="submit"><h2>Buy</h2></button>
+                            <button class="btn btn-lg btn-warning text-center text-body float-right"
+                                style="margin-top: 15px;" type="submit">
+                                <h2>Buy</h2>
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -541,7 +541,8 @@
     </script>
     <!-- JQuery For Show and Hide Buttons -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!--Show and Hide Buttons -->
+
+    <!-- Navigation Buttons with Show and Hide Functionality -->
     <script>
         $(document).ready(function () {
             $("form").hide();
@@ -568,7 +569,7 @@
                 $(".btn2").hide();
                 $(".btn4").show();
                 $(".btn5").show();
-             });
+            });
             $(".btn4").click(function () {
                 $(".shipping").show();
                 $(".billing").hide();
@@ -595,8 +596,22 @@
             });
 
         });
-
     </script>
+
+    <!-- Copy and Clear Form Fields -->
+    <script>
+        function copyInfo(form) {
+            var checked = form.inlineCheckbox1.checked;
+            form.validationFirstNameB.value = checked ? form.validationFirstName.value : "";
+            form.validationLastNameB.value = checked ? form.validationLastName.value : "";
+            form.validationAddressB.value = checked ? form.validationAddress.value : "";
+            form.validationAddress2B.value = checked ? form.validationAddress2.value : "";
+            form.validationCityB.value = checked ? form.validationCity.value : "";
+            form.validationStateB.value = checked ? form.validationState.value : "";
+            form.validationZipB.value = checked ? form.validationZip.value : "";
+        }
+    </script>
+
 
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -615,7 +630,7 @@
                         form.classList.add('was-validated');
                     }, false);
                 });
-            },  false);
+            }, false);
         })();
     </script>
 </body>
