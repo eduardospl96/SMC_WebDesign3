@@ -36,6 +36,10 @@ p {
     font-family: 'DunbarText';
 }
 
+h1 {
+    font-size: 70px;
+}
+
 .jumbotronservices {
     background-image: url('../assets/images/4.jpg');
     background-size: cover;
@@ -48,10 +52,42 @@ p {
     background-position: center;
 }
 
+.carousel-caption {
+    transform: translateY(-70%);
+    bottom: 0;
+    top: 60%;
+}
+
+.bg-carousel1 {
+    background-image: url('../assets/images/1.jpg');
+}
+
+.bg-carousel2 {
+    background-image: url('../assets/images/2.jpg');
+}
+
+.bg-carousel3 {
+    background-image: url('../assets/images/3.jpg');
+}
+
+.bg-carousel1,
+.bg-carousel2,
+.bg-carousel3 {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 /* Icons */
 .card-footer i {
-    color: red;
+    color: #E50914;
     font-size: 20px
+}
+
+.btn-red {
+    background-color: #E50914;
 }
 
 #icons ul {
@@ -76,4 +112,16 @@ p {
 
 .rightside {
     background: black;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .carousel-caption {
+        transform: translateY(-70%);
+        bottom: 0;
+        top: 60%;
+    }
 }
