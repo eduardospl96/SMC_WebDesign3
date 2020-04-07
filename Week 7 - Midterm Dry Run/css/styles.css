@@ -24,7 +24,7 @@
     max-width: 150px;
 }
 
-.navbar {
+.bg-black {
     background-color: black;
 }
 
@@ -40,14 +40,18 @@ h1 {
     font-size: 70px;
 }
 
+h3 {
+    margin: 30px 0px 30px 0px;
+}
+
 .jumbotronservices {
-    background-image: url('../assets/images/4.jpg');
+    background-image: url('../assets/images/services.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .jumbotronteam {
-    background-image: url('../assets/images/cover.jpg');
+    background-image: url('../assets/images/team.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -88,6 +92,11 @@ h1 {
 
 .btn {
     text-align: center;
+}
+
+.btn-outline-red {
+    color: #E50914;
+    border-color: #E50914;
 }
 
 .btn-red {
@@ -131,4 +140,10 @@ h1 {
         bottom: 0;
         top: 60%;
     }
+}
+
+.concert {
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
 }
