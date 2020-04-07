@@ -86,6 +86,10 @@ h1 {
     font-size: 20px
 }
 
+.btn {
+    text-align: center;
+}
+
 .btn-red {
     background-color: #E50914;
 }
@@ -106,12 +110,15 @@ h1 {
 }
 
 .leftside {
-    background-image: url(../assets/images/wow.jpg);
+    background-image: url(../assets/images/about.jpg);
     background-size: cover;
 }
 
 .rightside {
     background: black;
+    font-size: larger;
+    padding: 0px 70px 0px 70px;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
