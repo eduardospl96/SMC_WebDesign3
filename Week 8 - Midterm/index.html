@@ -107,23 +107,74 @@
 
     <footer></footer>
 
-
-    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+    <!-- Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="redModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title">Subscribe To Our Newsletter!</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Modal body text goes here.</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <form class="needs-validation" novalidate>
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationFirstName">First Name</label>
+                                            <input type="text" class="form-control" id="validationFirstName"
+                                                placeholder="First Name" required>
+                                            <div class="invalid-feedback">
+                                                Please provide your first name.
+                                            </div>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationLastName">Last Name</label>
+                                            <input type="text" class="form-control" id="validationLastName"
+                                                placeholder="Last Name" required>
+                                            <div class="invalid-feedback">
+                                                Please provide your last name.
+                                            </div>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col mb-3">
+                                            <label for="validationEmail">Email</label>
+                                            <input type="text" class="form-control" id="validationEmail"
+                                                placeholder="you@email.com" required>
+                                            <div class="invalid-feedback">
+                                                Please provide a valid email address.
+                                            </div>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                            <label class="custom-control-label" for="customSwitch1">I want to subscribe
+                                                to all emails and promotions.</label>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="submit" class="btn btn-red text-light">Subscribe</button>
                 </div>
+                </form>
             </div>
         </div>
     </div>
