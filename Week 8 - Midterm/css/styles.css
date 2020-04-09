@@ -1,0 +1,187 @@
+/* CSS Document */
+@charset "UTF-8";
+
+/* 
+	 ______    _                     _          _____      _               _   _               _____          
+	|  ____|  | |                   | |        / ____|    | |             | | (_)             |  __ \         
+	| |__   __| |_   _  __ _ _ __ __| | ___   | (___   ___| |__   __ _ ___| |_ _  __ _ _ __   | |__) |_ _ ____
+	|  __| / _` | | | |/ _` | '__/ _` |/ _ \   \___ \ / _ \ '_ \ / _` / __| __| |/ _` | '_ \  |  ___/ _` |_  /
+	| |___| (_| | |_| | (_| | | | (_| | (_) |  ____) |  __/ |_) | (_| \__ \ |_| | (_| | | | | | |  | (_| |/ / 
+	|______\__,_|\__,_|\__,_|_|  \__,_|\___/  |_____/ \___|_.__/ \__,_|___/\__|_|\__,_|_| |_| |_|   \__,_/___|
+	
+*/
+@font-face {
+    font-family: DunbarTall;
+    src: url(../assets/fonts/DunbarTall.ttf);
+}
+
+@font-face {
+    font-family: DunbarText;
+    src: url(../assets/fonts/DunbarText.ttf);
+}
+
+.navbar-brand img {
+    max-width: 150px;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.red {
+    color: #E50914;
+}
+
+body {
+    font-family: 'DunbarTall';
+}
+
+p {
+    font-family: 'DunbarText';
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h3 {
+    margin: 30px 0px 30px 0px;
+}
+  /* unvisited link */
+a:link {
+    color: #E50914;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #E50914;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #E50914;
+  }
+
+.jumbotronservices {
+    background-image: url('../assets/images/services.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbotronteam {
+    background-image: url('../assets/images/team.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption {
+    transform: translateY(-70%);
+    bottom: 0;
+    top: 60%;
+}
+
+.bg-carousel1 {
+    background-image: url('../assets/images/1.jpg');
+}
+
+.bg-carousel2 {
+    background-image: url('../assets/images/2.jpg');
+}
+
+.bg-carousel3 {
+    background-image: url('../assets/images/3.jpg');
+}
+
+.bg-carousel1,
+.bg-carousel2,
+.bg-carousel3 {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Icons */
+.card-footer i {
+    color: #E50914;
+    font-size: 20px
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn-outline-red {
+    color: #E50914;
+    border-color: #E50914;
+}
+
+.btn-red {
+    background-color: #E50914;
+}
+
+#icons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex
+}
+
+.leftside,
+.rightside {
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    font-size: 40px;
+}
+
+.leftside {
+    background-image: url(../assets/images/about.jpg);
+    background-size: cover;
+}
+
+.rightside {
+    width: 100%;
+    background: black;
+    font-size: larger;
+    padding: 0px 70px 0px 70px;
+    text-align: center;
+}
+
+.downside {
+    height: 100vh;
+    font-size: larger;;
+    color: #fff;
+    text-align: justify;
+}
+
+.margin{
+    padding: 25px 25px 25px 25px;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .carousel-caption {
+        transform: translateY(-70%);
+        bottom: 0;
+        top: 60%;
+    }
+    .rightside {
+        padding: 0px 25px 0px 25px;
+    }
+}
+
+.concert {
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+}
