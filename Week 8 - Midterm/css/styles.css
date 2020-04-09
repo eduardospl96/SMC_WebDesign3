@@ -67,6 +67,10 @@ a:link {
     color: #E50914;
   }
 
+.alert {
+    margin: 0px;
+    text-align: justify;
+}
 .jumbotronservices {
     background-image: url('../assets/images/services.jpg');
     background-size: cover;
