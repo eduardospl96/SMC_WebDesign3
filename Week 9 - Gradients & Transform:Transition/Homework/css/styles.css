@@ -1,0 +1,27 @@
+/* CSS Document */
+@charset "UTF-8";
+
+.navbar-brand img {
+    max-width: 200px;
+}
+
+/* unvisited link */
+a:link {
+    color: #736a66;
+}
+
+/* visited link */
+a:visited {
+    color: #736a66;
+}
+
+/* mouse over link */
+a:hover {
+    color: #db8140;
+}
+
+/* selected link */
+.blue {
+    color: #67c6c7 !important;
+}
+
