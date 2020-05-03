@@ -20,8 +20,12 @@ a:hover {
     color: #db8140;
 }
 
-/* selected link */
+
 .blue {
     color: #67c6c7 !important;
+}
+
+.orange {
+    color: #db8140;
 }
 
