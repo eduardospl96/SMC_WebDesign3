@@ -1,13 +1,33 @@
 /* CSS Document */
 @charset "UTF-8";
 
+body {font-family: 'Quicksand', sans-serif; text-align: justify;}
+
 .navbar-brand img {
     max-width: 200px;
+}
+
+.navbar-brand {
+    padding: 0;
+    transition: transform 0.5s ease-out;
+}
+
+.navbar-brand.is-active {
+    transform: skewX(-30deg);
+}
+
+.navbar {
+    padding-top: 0%;
+}
+
+a{
+    transition: scale .5s ease-in-out;
 }
 
 /* unvisited link */
 a:link {
     color: #736a66;
+    transition: 0.3s;
 }
 
 /* visited link */
@@ -16,8 +36,9 @@ a:visited {
 }
 
 /* mouse over link */
-a:hover {
+#rotate:hover {
     color: #db8140;
+    transform: rotate(-20deg);
 }
 
 
@@ -27,5 +48,20 @@ a:hover {
 
 .orange {
     color: #db8140;
+}
+
+.bg-gradient {
+    background-color: white;
+    background-image: linear-gradient(#736a66, white 60%);
+}
+
+.color {
+    transition: transform .5s, filter 1.5s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.color:hover {
+    transform: scale(1.1);
+    filter: grayscale(100%);
 }
 
