@@ -1,22 +1,152 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<!--
+	 ______    _                     _          _____      _               _   _               _____          
+	|  ____|  | |                   | |        / ____|    | |             | | (_)             |  __ \         
+	| |__   __| |_   _  __ _ _ __ __| | ___   | (___   ___| |__   __ _ ___| |_ _  __ _ _ __   | |__) |_ _ ____
+	|  __| / _` | | | |/ _` | '__/ _` |/ _ \   \___ \ / _ \ '_ \ / _` / __| __| |/ _` | '_ \  |  ___/ _` |_  /
+	| |___| (_| | |_| | (_| | | | (_| | (_) |  ____) |  __/ |_) | (_| \__ \ |_| | (_| | | | | | |  | (_| |/ / 
+	|______\__,_|\__,_|\__,_|_|  \__,_|\___/  |_____/ \___|_.__/ \__,_|___/\__|_|\__,_|_| |_| |_|   \__,_/___|
+	
+-->
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Styles -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+    <title>Camply</title>
+</head>
+
+<body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-black camplynav">
+        <!-- Logo  -->
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/images/camply-logo.png" alt="Camply Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar  -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+                <a class="nav-item nav-link active" href="#"><strong>HOME</strong></span></a>
+                <a class="nav-item nav-link" href="#"><strong>SERVICE</strong></a>
+                <a class="nav-item nav-link" href="#"><strong>FEATURES</strong></a>
+                <a class="nav-item nav-link" href="#"><strong>PRICING</strong></a>
+            </div>
+            <!-- Social Media Icons  -->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="space row no-gutters">
+            <div class="col-lg-6 no-gutters">
+                <div class="leftside d-flex justify-content-center align-items-center">
+                    <div>
+                        <h1 class="display-3 text-warning">Plan Your Post-Quarentine Escape</h1>
+                        <h3 class="text-justify">Camply believes that the best days are ahead of us. We are excited to
+                            launch or service in the near future. Tell us what your escape from the city will look like
+                            and receive priority access when reservations open.</h2>
+                            <p class="text-justify">Campgrounds are currently closed to help stop the spread of
+                                COVID-19. We'll notify you when outdoor activities like camping resume, so we can all
+                                get out and explore safely.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 no-gutters">
+                <div class="rightside d-flex justify-content-center align-items-center">
+                    <div class="container-fluid myform">
+                        <form class="needs-validation" novalidate>
+                            <div class="form-row">
+                                <div class="form-group col-lg-12">
+                                    <input type="text" class="form-control rounded-pill" id="validationName"
+                                        placeholder="Name" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your name.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-lg-12">
+                                    <input type="text" class="form-control rounded-pill" id="validationEmail"
+                                        placeholder="Email" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid email address.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-lg-12">
+                                    <button type="submit" class="btn btn-warning rounded-pill text-light">Get
+                                        Updates</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+        <div class="sky">
+            <div class="sun"></div>
+            <div class="moon"></div>
+            <div class="camply">
+                <img src="assets/images/camply.png" alt="Camply Logo">
+            </div>
+        </div>
+        <div class="river">
+            <div class="waveimg wave"></div>
+        </div>
+        <div class="ground">
+            <img src="assets/images/tent.png" alt="Tent">
+            <div class="flame-wrapper">
+                <div class="flame red"></div>
+                <div class="flame orange"></div>
+                <div class="flame gold"></div>
+                <div class="flame white"></div>
+            </div>
+        </div>
+    <footer></footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
 </html>
