@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+	 ______    _                     _          _____      _               _   _               _____          
+	|  ____|  | |                   | |        / ____|    | |             | | (_)             |  __ \         
+	| |__   __| |_   _  __ _ _ __ __| | ___   | (___   ___| |__   __ _ ___| |_ _  __ _ _ __   | |__) |_ _ ____
+	|  __| / _` | | | |/ _` | '__/ _` |/ _ \   \___ \ / _ \ '_ \ / _` / __| __| |/ _` | '_ \  |  ___/ _` |_  /
+	| |___| (_| | |_| | (_| | | | (_| | (_) |  ____) |  __/ |_) | (_| \__ \ |_| | (_| | | | | | |  | (_| |/ / 
+	|______\__,_|\__,_|\__,_|_|  \__,_|\___/  |_____/ \___|_.__/ \__,_|___/\__|_|\__,_|_| |_| |_|   \__,_/___|
+	
+-->
+
+<head>
+    <title>A-Frame</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+    <!-- Stars Component -->
+    <script src="https://unpkg.com/aframe-star-system-component@1.0.0/index.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <!-- Assets -->
+        <a-assets>
+            <img id="earth-texture"
+                src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg"
+                crossorigin="anonymous">
+            <img id="moon-texture"
+                src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/moon_1024.jpg"
+                crossorigin="anonymous">
+            <img id="panel-texture" src="assets/panel.jpg" crossorigin="anonymous">
+        </a-assets>
+
+        <!-- Camera Position -->
+        <a-camera position='0 0 20'></a-camera>
+
+        <!-- Rotation Animation -->
+        <a-mixin id="rotation"
+            animation="property: rotation; loop: true; from:  0 0 0; to: 0 360 0; dur: 20000; easing: linear;">
+        </a-mixin>
+
+        <!-- Orbit Animation -->
+        <a-mixin id="orbit" animation="property: rotation; loop: true; to: 0 360 0; dur: 50000; easing: linear;">
+        </a-mixin>
+
+        <!-- Space -->
+        <a-sky color="black"></a-sky>
+
+        <!-- Stars -->
+        <a-entity star-system="count: 1000; radius: 250; depth: 0"></a-entity>
+
+        <!-- Earth, Moon & Satellite -->
+        <a-entity id="earth-and-moon" position="0 0 0">
+            <a-entity id="earth-container">
+                <a-sphere position="0 0 0" radius="5" segments-height="100" id="earth" src="#earth-texture"
+                    mixin="rotation"></a-sphere>
+                <a-entity id="moon-satellite-container" mixin="orbit">
+                    <a-sphere position="-10 0 0" radius="1" segments-height="100" id="moon" src="#moon-texture">
+                    </a-sphere>
+                    <!-- Satellite -->
+                    <a-entity id="satellite" position="-8 3 0">
+                        <a-cylinder color="gray" height="1" radius=".25" rotation="-45 90 180"></a-cylinder>
+                        <a-entity geometry="primitive: ring; radiusInner: 0.25; radiusOuter: .75"
+                            material="side: double; color: white;" rotation="45 90 180"></a-entity>
+                        <a-entity geometry="primitive: plane; height: .5; width: 3"
+                            material="side: double; color: mediumblue;" rotation="45 90 180" src="#panel-texture"></a-entity>
+                    </a-entity>
+                </a-entity>
+            </a-entity>
+        </a-entity>
+    </a-scene>
+</body>
+
+</html>
+
+<!--  For Light in Sphere: light="type: point" material="shader: flat;"-->
