@@ -1,0 +1,518 @@
+/* 
+	 ______    _                     _          _____      _               _   _               _____          
+	|  ____|  | |                   | |        / ____|    | |             | | (_)             |  __ \         
+	| |__   __| |_   _  __ _ _ __ __| | ___   | (___   ___| |__   __ _ ___| |_ _  __ _ _ __   | |__) |_ _ ____
+	|  __| / _` | | | |/ _` | '__/ _` |/ _ \   \___ \ / _ \ '_ \ / _` / __| __| |/ _` | '_ \  |  ___/ _` |_  /
+	| |___| (_| | |_| | (_| | | | (_| | (_) |  ____) |  __/ |_) | (_| \__ \ |_| | (_| | | | | | |  | (_| |/ / 
+	|______\__,_|\__,_|\__,_|_|  \__,_|\___/  |_____/ \___|_.__/ \__,_|___/\__|_|\__,_|_| |_| |_|   \__,_/___|
+	
+*/
+
+@font-face {
+  font-family: Neutraface2TextBold;
+  src: url(../assets/fonts/Neutraface2Text-Bold.otf);
+}
+
+@font-face {
+  font-family: Neutraface2TextBook;
+  src: url(../assets/fonts/Neutraface2Text-Book.otf);
+}
+
+nav,
+h1 {
+  font-family: 'Neutraface2TextBold';
+}
+
+body {
+  font-family: 'Neutraface2TextBook';
+  overflow-y: scroll; /* Add the ability to scroll */
+}
+
+h2 {
+  font-family: 'Neutraface2TextBook';
+  color: black;
+  margin: 1vw 0vw 1vw 0vw;
+}
+
+.card{
+  border: none;
+}
+
+.right{
+  float: right;
+}
+
+.inline{
+  display: inline-block;
+}
+
+#categories {
+  margin-bottom: 1.5vw;
+  margin-top: 3vw;
+  font-size: 30px;
+}
+
+#title {
+  margin-left: 3vw;
+  font-size: 30px;
+}
+
+#title2 {
+  font-size: 30px;
+}
+
+#title3 {
+  font-size: 30px;
+  margin-bottom: 1.5vw;
+}
+
+#title4 {
+  margin: 3vw 0vw 3vw 0vw;
+}
+
+.bg-black{
+ background-color: black;
+}
+
+.round {
+  border-radius: 2.5vw;
+}
+
+.roundless {
+  border-radius: 2.5vw 2.5vw 0vw 0vw;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.navbar-brand img {
+  max-width: 150px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.carousel-caption {
+  transform: translateY(-70%);
+  bottom: 0;
+  top: 60%;
+}
+
+.bg-carousel1 {
+  background-image: url('../assets/images/gear/carousel/gearwizard.jpg');
+}
+
+.bg-carousel2 {
+  background-image: url('../assets/images/gear/carousel/kits.jpeg');
+}
+
+.carousel-item {
+  height: 25vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.cart span{
+  display:inline-block;
+  width:23px;
+  height:23px;
+  background:#ffc107;
+  color: black;
+  text-align:center;
+  border-radius:50%;
+  margin-left:10px; 
+}
+
+/*Scroll Menu*/
+div.scrollmenu {
+  white-space: nowrap; /* Next To Each Other */
+  overflow: auto;
+  overflow-x: scroll; /* Add the ability to scroll */
+}
+
+div.scrollmenu div {
+  display: inline-block;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+div.scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+div.scrollmenu {
+  -ms-overflow-style: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+body.scrollmenu {
+  -ms-overflow-style: none;
+}
+
+#campgrounds{
+margin: 1.5vw 0vw 3vw 6.5vw;
+}
+
+#profile{
+  margin: 1.5vw 1.5vw 1.5vw 1.5vw;
+  }
+
+@media (min-width:320px) and (max-width:374px) {
+  #caption {
+    font-size: 20px;
+  }
+
+  .carousel-item {
+    height: 50vw;
+  }
+
+  .carousel-caption {
+    transform: translateY(-70%);
+    bottom: 0;
+    top: 40%;
+  }
+
+  #categorieis {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  #campgrounds{
+    margin: 3.5vw 0vw 8vw 7vw;
+    }
+
+    #profile-pic{
+      width: 150px;
+      height: 150px;
+    }
+
+  #title4{
+    font-size: 20px;
+  }
+
+  #social{
+    margin: 5vw 0vw 5vw 0vw;
+  }
+}
+
+@media (min-width:375px) and (max-width:414px) {
+  #caption {
+    font-size: 20px;
+  }
+
+  .carousel-item {
+    height: 50vw;
+  }
+
+  .carousel-caption {
+    transform: translateY(-70%);
+    bottom: 0;
+    top: 45%;
+  }
+
+  #categorieis {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  #campgrounds{
+    margin: 3.5vw 0vw 8vw 7vw;
+    }
+
+    #profile-pic{
+      width: 150px;
+      height: 150px;
+    }
+
+    #title4{
+      font-size: 20px;
+    }
+
+    #social{
+      margin: 5vw 0vw 5vw 0vw;
+    }
+}
+
+@media (min-width:415px) and (max-width:619px) {
+  #caption {
+    font-size: 20px;
+  }
+
+  .carousel-item {
+    height: 50vw;
+  }
+
+  .carousel-caption {
+    transform: translateY(-70%);
+    bottom: 0;
+    top: 55%;
+  }
+
+  #categorieis {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  #campgrounds{
+    margin: 3vw 0vw 7vw 7vw;
+    }
+
+    #profile-pic{
+      width: 150px;
+      height: 150px;
+    }
+
+    #title4{
+      font-size: 20px;
+    }
+    #social{
+      margin: 5vw 0vw 5vw 0vw;
+    }
+}
+
+@media (min-width:620px) and (max-width:768px) {
+  #caption {
+    font-size: 25px;
+  }
+
+  .carousel-item {
+    height: 40vw;
+  }
+
+  .carousel-caption {
+    transform: translateY(-70%);
+    bottom: 0;
+    top: 55%;
+  }
+
+  #categorieis {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  #campgrounds{
+    margin: 2.5vw 0vw 5.5vw 7vw;
+    }
+
+    #profile-pic{
+      width: 150px;
+      height: 150px;
+    }
+
+    #title4{
+      font-size: 25px;
+    }
+    #social{
+      margin: 3vw 0vw 3vw 0vw;
+    }
+}
+
+@media (min-width:769px) and (max-width:1200px) {
+  #caption {
+    font-size: 30px;
+  }
+
+  .carousel-item {
+    height: 30vw;
+  }
+
+  .carousel-caption {
+    transform: translateY(-70%);
+    bottom: 0;
+    top: 55%;
+  }
+
+  #categorieis {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  #campgrounds{
+    margin: 2vw 0vw 4vw 7vw;
+    }
+
+  #profile-pic{
+    width: 150px;
+    height: 150px;
+  }
+
+  #title4{
+    font-size: 25px;
+  }
+}
+
+@media (min-width:1201px) and (max-width:1440px) {
+  #caption {
+    font-size: 30px;
+  }
+
+  .carousel-item {
+    height: 25vw;
+  }
+
+  .carousel-caption {
+    transform: translateY(-70%);
+    bottom: 0;
+    top: 60%;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  #price{
+    font-size: 35px;
+  }
+}
+
+#account{
+height: 100%;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+
+
+/* ----------------- CART PAGE --------------- */
+
+.container-products {
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.container-products ion-icon {
+  font-size: 25px;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.product-header {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.product-title {
+  width: 45%;
+  border-bottom: 1px solid lightgray;
+}
+
+.price {
+  width: 15%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  width: 30%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.total {
+  width: 10%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.product {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.product ion-icon {
+  cursor: pointer;
+  
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products img {
+  width: 75px;
+}
+
+.basketTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.basketTotalTitle {
+  width: 30%;
+}
+
+.basketTotal {
+  width: 10%;
+}
+
+@media(max-width: 500px) {
+  nav h2 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;;
+  }
+
+  .sm-hide {
+      display: none;;
+  }
+
+  .products,
+  .product-header {
+      justify-content: center;
+  }
+
+  .basketTotalContainer {
+      padding-right: 8%;
+  }
+}
