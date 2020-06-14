@@ -70,6 +70,11 @@ h2 {
   margin: 3vw 0vw 3vw 0vw;
 }
 
+#title5 {
+  margin: 3vw 0vw 1.5vw 1.5vw;
+  font-size: 30px;
+}
+
 .bg-black{
  background-color: black;
 }
@@ -166,8 +171,9 @@ body.scrollmenu {
 margin: 1.5vw 0vw 3vw 6.5vw;
 }
 
-#profile{
-  margin: 1.5vw 1.5vw 1.5vw 1.5vw;
+
+.profile{
+  margin: 7vw 1.5vw 1.5vw 1.5vw;
   }
 
 @media (min-width:320px) and (max-width:374px) {
@@ -391,10 +397,6 @@ margin: 1.5vw 0vw 3vw 6.5vw;
   #price{
     font-size: 35px;
   }
-}
-
-#account{
-height: 100%;
 }
 
 @media (min-width: 576px) {}

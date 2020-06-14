@@ -1,0 +1,1089 @@
+/* 
+	 ______    _                     _          _____      _               _   _               _____          
+	|  ____|  | |                   | |        / ____|    | |             | | (_)             |  __ \         
+	| |__   __| |_   _  __ _ _ __ __| | ___   | (___   ___| |__   __ _ ___| |_ _  __ _ _ __   | |__) |_ _ ____
+	|  __| / _` | | | |/ _` | '__/ _` |/ _ \   \___ \ / _ \ '_ \ / _` / __| __| |/ _` | '_ \  |  ___/ _` |_  /
+	| |___| (_| | |_| | (_| | | | (_| | (_) |  ____) |  __/ |_) | (_| \__ \ |_| | (_| | | | | | |  | (_| |/ / 
+	|______\__,_|\__,_|\__,_|_|  \__,_|\___/  |_____/ \___|_.__/ \__,_|___/\__|_|\__,_|_| |_| |_|   \__,_/___|
+	
+*/
+
+@font-face {
+  font-family: Neutraface2TextBold;
+  src: url(../assets/fonts/Neutraface2Text-Bold.otf);
+}
+
+@font-face {
+  font-family: Neutraface2TextBook;
+  src: url(../assets/fonts/Neutraface2Text-Book.otf);
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav,
+h1 {
+  font-family: 'Neutraface2TextBold';
+}
+
+body {
+  font-family: 'Neutraface2TextBook';
+  overflow-y: scroll;
+  /* Add the ability to scroll */
+}
+
+h2 {
+  font-family: 'Neutraface2TextBook';
+  color: black;
+  margin: 1vw 0vw 1vw 0vw;
+}
+
+.card {
+  border: none;
+}
+
+.btn1 {
+  margin-top: 1vw;
+}
+
+.right {
+  float: right;
+}
+
+.inline {
+  display: inline-block;
+}
+
+#categories {
+  margin-bottom: 1.5vw;
+  margin-top: 3vw;
+  font-size: 30px;
+}
+
+#title {
+  margin-left: 3vw;
+  font-size: 30px;
+}
+
+#title2 {
+  font-size: 30px;
+}
+
+#title3 {
+  font-size: 30px;
+  margin-bottom: 1.5vw;
+}
+
+#title4 {
+  margin: 3vw 0vw 3vw 0vw;
+}
+
+#title5 {
+  margin: 3vw 0vw 1.5vw 1.5vw;
+  font-size: 30px;
+}
+
+#location {
+  margin: 1.5vw 0vw .5vw 5vw;
+}
+
+#date {
+  margin: 0vw 0vw 1.5vw 5vw;
+  color: gray;
+}
+
+.space-around {
+  padding: 0% 5% 0% 5%;
+  margin-bottom: 5vw;
+}
+
+.betweenspace {
+  margin: 3vw 0vw 3vw 0vw;
+}
+
+
+.betweenspace2 {
+  margin: 3vw 0vw 0vw 0vw;
+}
+
+.downspace {
+  margin-bottom: 5vw;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-darkblue {
+  background-color: #071435;
+}
+
+@supports (-webkit-text-stroke: 1px black) {
+  .stroke {
+    -webkit-text-stroke: .7px lightgray;
+    -webkit-text-fill-color: white;
+  }
+}
+
+.round {
+  border-radius: 2.5vw;
+}
+
+.roundless {
+  border-radius: 2.5vw 2.5vw 0vw 0vw;
+}
+
+.roundleftdown {
+  border-radius: 2.5vw 0vw 0vw 2.5vw;
+}
+
+.roundrightup {
+  border-radius: 0vw 2.5vw 2.5vw 0vw;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.navbar-brand img {
+  max-width: 150px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.carousel-caption {
+  transform: translateY(-70%);
+  bottom: 0;
+  top: 60%;
+}
+
+.bg-carousel1 {
+  background-image: url('../assets/images/gear/carousel/gearwizard.jpg');
+}
+
+.bg-carousel2 {
+  background-image: url('../assets/images/gear/carousel/kits.jpeg');
+}
+
+.bg-carousel3 {
+  background-image: url('../assets/images/account/mountlemmon/1.jpg');
+}
+
+.bg-carousel4 {
+  background-image: url('../assets/images/account/mountlemmon/2.jpg');
+}
+
+.bg-carousel5 {
+  background-image: url('../assets/images/account/mountlemmon/3.jpg');
+}
+
+.bg-carousel6 {
+  background-image: url('../assets/images/account/mountlemmon/4.jpg');
+}
+
+.bg-carousel7 {
+  background-image: url('../assets/images/account/russianriver/1.jpg');
+}
+
+.bg-carousel8 {
+  background-image: url('../assets/images/account/russianriver/2.jpg');
+}
+
+.bg-carousel9 {
+  background-image: url('../assets/images/orders/stars.jpg');
+}
+
+.bg-carousel10 {
+  background-image: url('../assets/images/orders/view.jpg');
+}
+
+.bg-carousel11 {
+  background-image: url('../assets/images/tents/1x1/tent1.jpg');
+}
+
+.bg-carousel12 {
+  background-image: url('../assets/images/tents/zoom/tent1.jpg');
+}
+
+.bg-carousel13 {
+  background-image: url('../assets/images/tents/1x1/tent2.jpg');
+}
+
+.bg-carousel14 {
+  background-image: url('../assets/images/tents/zoom/tent2.jpg');
+}
+
+.bg-carousel15 {
+  background-image: url('../assets/images/tents/1x1/tent3.jpg');
+}
+
+.bg-carousel16 {
+  background-image: url('../assets/images/tents/zoom/tent3.jpg');
+}
+
+.carousel-item {
+  height: 25vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#carouselpost {
+  height: 35vw;
+}
+
+.bg-carousel11,
+.bg-carousel12,
+.bg-carousel13,
+.bg-carousel14,
+.bg-carousel15,
+.bg-carousel16 {
+  height: calc(100vh - 150px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.cart span {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background: #ffc107;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+/*Scroll Menu*/
+div.scrollmenu {
+  white-space: nowrap;
+  /* Next To Each Other */
+  overflow: auto;
+  overflow-x: scroll;
+  /* Add the ability to scroll */
+}
+
+div.scrollmenu div {
+  display: inline-block;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+div.scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+div.scrollmenu {
+  -ms-overflow-style: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+body.scrollmenu {
+  -ms-overflow-style: none;
+}
+
+div.scrollposts {
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+div.scrollposts::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+div.scrollposts {
+  -ms-overflow-style: none;
+}
+
+div.scrollreviews {
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+div.scrollreviews::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+div.scrollreviews {
+  -ms-overflow-style: none;
+}
+
+.scrollreviews {
+  height: calc(100vh - 65vh);
+}
+
+#campgrounds {
+  margin: 1.5vw 0vw 3vw 6.5vw;
+}
+
+.leftside,
+.rightside {
+  height: calc(100vh - 130px);
+  width: 100%
+}
+
+.profile {
+  margin: 0vw 1.5vw 0vw 1.5vw;
+}
+
+@media (min-width:320px) and (max-width:374px) {
+  #caption {
+    font-size: 20px;
+  }
+
+  .carousel-item {
+    height: 50vw;
+  }
+
+  .carousel-caption {
+    transform: translateY(-70%);
+    bottom: 0;
+    top: 40%;
+  }
+
+  #categorieis {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  #campgrounds {
+    margin: 3.5vw 0vw 8vw 7vw;
+  }
+
+  #profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  #title4 {
+    font-size: 20px;
+  }
+
+  #social {
+    margin: 5vw 0vw 5vw 0vw;
+  }
+
+  #location {
+    margin: 1.5vw 0vw 0vw 7vw;
+    font-size: 25px;
+  }
+
+  #date {
+    margin: 0vw 0vw 3vw 7vw;
+    font-size: 15px;
+  }
+
+  .leftside {
+    height: 70vh;
+  }
+
+  #carouselpost {
+    height: 53vw;
+  }
+
+  .roundleftdown {
+    border-radius: 2.5vw 2.5vw 0vw 0vw;
+  }
+
+  .roundrightup {
+    border-radius: 0vw 0vw 2.5vw 2.5vw;
+  }
+
+  .bg-carousel11,
+  .bg-carousel12,
+  .bg-carousel13,
+  .bg-carousel14,
+  .bg-carousel15,
+  .bg-carousel16 {
+    height: calc(100vh - 150px);
+  }
+
+  #tentcard {
+    margin-bottom: 5vw;
+  }
+
+  #reviewname {
+    text-align: center;
+    margin-top: 3vw;
+  }
+}
+
+@media (min-width:375px) and (max-width:414px) {
+  #caption {
+    font-size: 20px;
+  }
+
+  .carousel-item {
+    height: 50vw;
+  }
+
+  .carousel-caption {
+    transform: translateY(-70%);
+    bottom: 0;
+    top: 45%;
+  }
+
+  #categorieis {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  #campgrounds {
+    margin: 3.5vw 0vw 8vw 7vw;
+  }
+
+  #profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  #title4 {
+    font-size: 20px;
+  }
+
+  #social {
+    margin: 5vw 0vw 5vw 0vw;
+  }
+
+  #location {
+    margin: 1.5vw 0vw 0vw 7vw;
+    font-size: 30px;
+  }
+
+  #date {
+    margin: 0vw 0vw 3vw 7vw;
+    font-size: 15px;
+  }
+
+  .leftside {
+    height: 60vh;
+  }
+
+  #carouselpost {
+    height: 53vw;
+  }
+
+  .roundleftdown {
+    border-radius: 2.5vw 2.5vw 0vw 0vw;
+  }
+
+  .roundrightup {
+    border-radius: 0vw 0vw 2.5vw 2.5vw;
+  }
+
+  .bg-carousel11,
+  .bg-carousel12,
+  .bg-carousel13,
+  .bg-carousel14,
+  .bg-carousel15,
+  .bg-carousel16 {
+    height: calc(100vh - 150px);
+  }
+
+  #tentcard {
+    margin-bottom: 5vw;
+  }
+
+  #reviewname {
+    text-align: center;
+    margin-top: 3vw;
+  }
+}
+
+@media (min-width:415px) and (max-width:619px) {
+  #caption {
+    font-size: 20px;
+  }
+
+  .carousel-item {
+    height: 50vw;
+  }
+
+  .carousel-caption {
+    transform: translateY(-70%);
+    bottom: 0;
+    top: 55%;
+  }
+
+  #categorieis {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  #campgrounds {
+    margin: 3vw 0vw 7vw 7vw;
+  }
+
+  #profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  #title4 {
+    font-size: 20px;
+  }
+
+  #social {
+    margin: 5vw 0vw 5vw 0vw;
+  }
+
+  #location {
+    margin: 1.5vw 0vw 0vw 7vw;
+    font-size: 30px;
+  }
+
+  #date {
+    margin: 0vw 0vw 3vw 7vw;
+    font-size: 15px;
+  }
+
+  .leftside {
+    height: 50vh;
+  }
+
+  #carouselpost {
+    height: 53vw;
+  }
+
+  .roundleftdown {
+    border-radius: 2.5vw 2.5vw 0vw 0vw;
+  }
+
+  .roundrightup {
+    border-radius: 0vw 0vw 2.5vw 2.5vw;
+  }
+
+  .bg-carousel11,
+  .bg-carousel12,
+  .bg-carousel13,
+  .bg-carousel14,
+  .bg-carousel15,
+  .bg-carousel16 {
+    height: calc(100vh - 150px);
+  }
+
+  #tentcard {
+    margin-bottom: 5vw;
+  }
+
+  #reviewname {
+    text-align: center;
+    margin-top: 3vw;
+  }
+}
+
+@media (min-width:620px) and (max-width:768px) {
+  #caption {
+    font-size: 25px;
+  }
+
+  .carousel-item {
+    height: 40vw;
+  }
+
+  .carousel-caption {
+    transform: translateY(-70%);
+    bottom: 0;
+    top: 55%;
+  }
+
+  #categorieis {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  #campgrounds {
+    margin: 2.5vw 0vw 5.5vw 7vw;
+  }
+
+  #profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  #title4 {
+    font-size: 25px;
+  }
+
+  #social {
+    margin: 3vw 0vw 3vw 0vw;
+  }
+
+  #location {
+    margin: 1.5vw 0vw 0vw 7vw;
+    font-size: 30px;
+  }
+
+  #date {
+    margin: 0vw 0vw 3vw 7vw;
+    font-size: 20px;
+  }
+
+  .leftside {
+    height: 50vh;
+  }
+
+  #carouselpost {
+    height: 53vw;
+  }
+
+  .roundleftdown {
+    border-radius: 2.5vw 2.5vw 0vw 0vw;
+  }
+
+  .roundrightup {
+    border-radius: 0vw 0vw 2.5vw 2.5vw;
+  }
+
+  .bg-carousel11,
+  .bg-carousel12,
+  .bg-carousel13,
+  .bg-carousel14,
+  .bg-carousel15,
+  .bg-carousel16 {
+    height: calc(100vh - 150px);
+  }
+
+  #tentcard {
+    margin-bottom: 5vw;
+  }
+
+  #reviewname {
+    text-align: center;
+    margin-top: 3vw;
+  }
+}
+
+@media (min-width:769px) and (max-width:992px) {
+  #caption {
+    font-size: 30px;
+  }
+
+  .carousel-item {
+    height: 30vw;
+  }
+
+  .carousel-caption {
+    transform: translateY(-70%);
+    bottom: 0;
+    top: 55%;
+  }
+
+  #categorieis {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  #campgrounds {
+    margin: 2vw 0vw 4vw 7vw;
+  }
+
+  #profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  #title4 {
+    font-size: 25px;
+  }
+
+  #location {
+    margin: 1.5vw 0vw 0vw 7vw;
+    font-size: 30px;
+  }
+
+  #date {
+    margin: 0vw 0vw 3vw 7vw;
+    font-size: 20px;
+  }
+
+  .leftside {
+    height: 50vh;
+  }
+
+  #carouselpost {
+    height: 53vw;
+  }
+
+  a {
+    font-size: small;
+  }
+
+  .roundleftdown {
+    border-radius: 2.5vw 2.5vw 0vw 0vw;
+  }
+
+  .roundrightup {
+    border-radius: 0vw 0vw 2.5vw 2.5vw;
+  }
+
+  .bg-carousel11,
+  .bg-carousel12,
+  .bg-carousel13,
+  .bg-carousel14,
+  .bg-carousel15,
+  .bg-carousel16 {
+    height: calc(100vh - 150px);
+  }
+
+  #tentcard {
+    margin-bottom: 5vw;
+  }
+}
+
+@media (min-width:993px) and (max-width:1200px) {
+  #caption {
+    font-size: 30px;
+  }
+
+  .carousel-item {
+    height: 30vw;
+  }
+
+  .carousel-caption {
+    transform: translateY(-70%);
+    bottom: 0;
+    top: 55%;
+  }
+
+  #categorieis {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  #campgrounds {
+    margin: 2vw 0vw 4vw 7vw;
+  }
+
+  #profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  #title4 {
+    font-size: 25px;
+  }
+
+  #location {
+    margin: 1.5vw 0vw 0vw 4vw;
+    font-size: 25px;
+  }
+
+  #date {
+    margin: 0vw 0vw 2vw 4vw;
+    font-size: 15px;
+  }
+
+  #carouselpost {
+    height: 26vw;
+  }
+
+  .bg-carousel11,
+  .bg-carousel12,
+  .bg-carousel13,
+  .bg-carousel14,
+  .bg-carousel15,
+  .bg-carousel16 {
+    height: calc(100vh - 150px);
+  }
+
+  #tentcard {
+    margin-bottom: 3vw;
+  }
+
+  .scrollreviews {
+    height: 35vh;
+  }
+}
+
+@media (min-width:1201px) and (max-width:1440px) {
+  #caption {
+    font-size: 30px;
+  }
+
+  .carousel-item {
+    height: 25vw;
+  }
+
+  .carousel-caption {
+    transform: translateY(-70%);
+    bottom: 0;
+    top: 60%;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  #price {
+    font-size: 35px;
+  }
+
+  #location {
+    margin: 1.5vw 0vw 0vw 5vw;
+    font-size: 30px;
+  }
+
+  #date {
+    margin: 0vw 0vw 1.5vw 5vw;
+    font-size: 20px;
+  }
+
+  .bg-carousel11,
+  .bg-carousel12,
+  .bg-carousel13,
+  .bg-carousel14,
+  .bg-carousel15,
+  .bg-carousel16 {
+    height: calc(100vh - 150px);
+  }
+
+  #tentcard {
+    margin-bottom: 3vw;
+  }
+
+  .scrollreviews {
+    height: 35vh;
+  }
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+
+
+/* ----------------- CART PAGE --------------- */
+
+.container-products {
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.container-products ion-icon {
+  font-size: 25px;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.product-header {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.product-title {
+  width: 45%;
+  border-bottom: 1px solid lightgray;
+}
+
+.price {
+  width: 15%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  width: 30%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.total {
+  width: 10%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.product {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.product ion-icon {
+  cursor: pointer;
+
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products img {
+  width: 75px;
+}
+
+.basketTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.basketTotalTitle {
+  width: 30%;
+}
+
+.basketTotal {
+  width: 10%;
+}
+
+@media(max-width: 500px) {
+  nav h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    ;
+  }
+
+  .sm-hide {
+    display: none;
+    ;
+  }
+
+  .products,
+  .product-header {
+    justify-content: center;
+  }
+
+  .basketTotalContainer {
+    padding-right: 8%;
+  }
+}
+
+
+/* ----------------- ANIMATIONS --------------- */
+.firstanimation {
+  opacity: 0;
+  animation: appear .25s;
+  animation-fill-mode: forwards;
+}
+
+.loadanimation {
+  opacity: 0;
+  animation: appear .5s;
+  animation-fill-mode: forwards;
+}
+
+.oneanimation {
+  opacity: 0;
+  animation: appear .5s;
+  animation-fill-mode: forwards;
+}
+
+.twoanimation {
+  opacity: 0;
+  animation: appear .75s;
+  animation-fill-mode: forwards;
+}
+
+.threeanimation {
+  opacity: 0;
+  animation: appear 1s;
+  animation-fill-mode: forwards;
+}
+
+.fouranimation {
+  opacity: 0;
+  animation: appear 1.25s;
+  animation-fill-mode: forwards;
+}
+
+.fiveanimation {
+  opacity: 0;
+  animation: appear 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.sixanimation {
+  opacity: 0;
+  animation: appear 1.75s;
+  animation-fill-mode: forwards;
+}
+
+.sevenanimation {
+  opacity: 0;
+  animation: appear 2s;
+  animation-fill-mode: forwards;
+}
+
+.eightanimation {
+  opacity: 0;
+  animation: appear 2.25s;
+  animation-fill-mode: forwards;
+}
+
+.big:hover {
+  transform: scale(1.025);
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

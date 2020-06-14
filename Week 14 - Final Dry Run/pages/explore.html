@@ -46,7 +46,7 @@
                 <a class="nav-item nav-link" href="../index.html">HOME</span></a>
                 <a class="nav-item nav-link active" href="../pages/explore.html">EXPLORE</a>
                 <a class="nav-item nav-link" href="../pages/gear.html">GEAR</a>
-                <a class="nav-item nav-link" href="../pages/orders.html">ORDERS <i class="fa fa-shopping-cart"></i></a>
+                <a id="modalLauncher" class="nav-item nav-link cart">ORDERS<span>0</span></a>
                 <a class="nav-item nav-link" href="../pages/tutorials.html">TUTORIALS</a>
                 <a class="nav-item nav-link" href="../pages/account.html">ACCOUNT</a>
             </div>
@@ -137,6 +137,35 @@
         </div>
     </main>
     <footer></footer>
+
+    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 id="title" class="modal-title">ORDER</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-products">
+                        <div class="product-header">
+                            <h5 class="product-title">PRODUCT</h5>
+                            <h5 class="price sm-hide">PRICE</h5>
+                            <h5 class="quantity">QUANTITY</h5>
+                            <h5 class="total">TOTAL</h5>
+                        </div>
+                        <div class="products">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning"><strong>Proceed To Checkout</strong></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

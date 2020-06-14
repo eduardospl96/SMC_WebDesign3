@@ -62,9 +62,9 @@
 
     <main>
         <div class="container-fluid">
-            <div class="row"  id="account">
+            <div class="row">
                 <div class="col-xl-4 col-lg-6 col-12 d-block mb-4 h-100">
-                <div id="profile" class="text-center">
+                <div class="text-center profile">
                     <img id="profile-pic" class="rounded-circle shadow-lg" src="../assets/images/account/profile.jpg" alt="Profile Picture"
                         width="300" height="300">
                     <h1 id="title4">Eduardo Paz</h1>
@@ -81,6 +81,35 @@
     </main>
     <footer>
     </footer>
+
+    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 id="title" class="modal-title">ORDER</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-products">
+                        <div class="product-header">
+                            <h5 class="product-title">PRODUCT</h5>
+                            <h5 class="price sm-hide">PRICE</h5>
+                            <h5 class="quantity">QUANTITY</h5>
+                            <h5 class="total">TOTAL</h5>
+                        </div>
+                        <div class="products">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning"><strong>Proceed To Checkout</strong></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

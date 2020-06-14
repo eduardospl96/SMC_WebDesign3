@@ -1,0 +1,450 @@
+/* 
+	 ______    _                     _          _____      _               _   _               _____          
+	|  ____|  | |                   | |        / ____|    | |             | | (_)             |  __ \         
+	| |__   __| |_   _  __ _ _ __ __| | ___   | (___   ___| |__   __ _ ___| |_ _  __ _ _ __   | |__) |_ _ ____
+	|  __| / _` | | | |/ _` | '__/ _` |/ _ \   \___ \ / _ \ '_ \ / _` / __| __| |/ _` | '_ \  |  ___/ _` |_  /
+	| |___| (_| | |_| | (_| | | | (_| | (_) |  ____) |  __/ |_) | (_| \__ \ |_| | (_| | | | | | |  | (_| |/ / 
+	|______\__,_|\__,_|\__,_|_|  \__,_|\___/  |_____/ \___|_.__/ \__,_|___/\__|_|\__,_|_| |_| |_|   \__,_/___|
+	
+*/
+
+@font-face {
+  font-family: Neutraface2TextBold;
+  src: url(../assets/fonts/Neutraface2Text-Bold.otf);
+}
+
+@font-face {
+  font-family: Neutraface2TextBook;
+  src: url(../assets/fonts/Neutraface2Text-Book.otf);
+}
+
+body {
+  font-family: 'Neutraface2TextBold';
+  color: white;
+  background: linear-gradient(#000428, #3a1c71);
+  animation: expand 5s 20s linear, bodygradient 10s 20s linear infinite;
+  animation-fill-mode: forwards;
+  background-size: 100% 100%;
+}
+
+.cart span {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background: #ffc107;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.camplynav {
+  margin-top: -58px;
+  animation: navanimation 2s 12s linear;
+  animation-fill-mode: forwards;
+}
+
+h3 {
+  font-family: 'Neutraface2TextBook';
+  color: white;
+  padding: 2vw 0vw 3vw 0vw;
+}
+
+p {
+  padding: 0vw 0vw 3vw 0vw;
+}
+
+.form-control {
+  height: 50px;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.navbar-brand img {
+  max-width: 150px;
+}
+
+.camplynavbar,
+.space,
+.sky,
+.river,
+.ground {
+  position: relative;
+}
+
+.space {
+  height: 0vh;
+  background: linear-gradient(#000428, #3a1c71);
+  animation: cameraup 5s 8s linear, spacegradient 1s 12s linear;
+  animation-fill-mode: forwards;
+  background-size: 100% 100%;
+  overflow: auto;
+}
+
+.sky {
+  height: 55%;
+  display: block;
+  background: linear-gradient(#3a1c71, #d76d77, #ffaf7b);
+  background-size: 400% 400%;
+  animation: skygradient 5s linear;
+  animation-fill-mode: forwards;
+}
+
+.river {
+  height: 15%;
+  background-image: linear-gradient(#c4e0e5, #4ca1af 40%);
+}
+
+.ground {
+  height: 30%;
+  background: seagreen;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.sun {
+  background-color: #ff8c1a;
+  width: 25vh;
+  height: 25vh;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 5px #ff8c1a;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: sunset 10s;
+  animation-fill-mode: forwards;
+}
+
+.moon {
+  background-color: transparent;
+  opacity: 0;
+  width: 15vh;
+  height: 15vh;
+  border-radius: 50%;
+  box-shadow: -5vh 1vh white;
+  position: absolute;
+  left: 25%;
+  top: 5%;
+  animation: moonrise 5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.camply img {
+  width: 50vh;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: logointro 3s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+.waveimg {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 100px;
+  background: url(../assets/images/home/wave.png);
+  background-size: 1000px 100px;
+}
+
+.wave {
+  animation: riverrun 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  opacity: 0.3;
+}
+
+.ground img {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  display: block;
+  bottom: 20%;
+  left: 10%;
+}
+
+.red {
+  width: 7vw;
+  height: 7vw;
+  background: orangered;
+  box-shadow: 0vw 0vw 0.3vw 0vw orangered;
+}
+
+.orange {
+  left: .85vw;
+  width: 5.25vw;
+  height: 5.25vw;
+  background: orange;
+  box-shadow: 0px 0px 0.25vw 0vw orange;
+}
+
+.gold {
+  left: 1.75vw;
+  width: 3.5vw;
+  height: 3.5vw;
+  background: gold;
+  box-shadow: 0px 0px 0.15vw 0vw gold;
+}
+
+.white {
+  left: 2.65vw;
+  width: 1.75vw;
+  height: 1.75vw;
+  background: lightyellow;
+  box-shadow: 0px 0px 0.1vw 0.0vw lightyellow;
+}
+
+.flame-wrapper {
+  display: block;
+  position: relative;
+  left: 70%;
+  top: 50%;
+  animation: flicker 0.3s linear infinite;
+}
+
+.flame {
+  bottom: 0;
+  position: absolute;
+  border-radius: 50% 0% 50% 50%;
+  transform: rotate(-45deg);
+}
+
+@keyframes sunset {
+  from {
+    top: 50%;
+  }
+
+  to {
+    top: 150%;
+  }
+}
+
+@keyframes moonrise {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes logointro {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes skygradient {
+  0% {
+    background-position: 0% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes spacegradient {
+  0% {
+    background: linear-gradient(#000428, #3a1c71);
+  }
+
+  99% {
+    background: linear-gradient(#000428, #3a1c71);
+  }
+
+  100% {
+    background: transparent;
+  }
+}
+
+@keyframes bodygradient {
+  0% {
+    background-position: 0% 100%;
+  }
+
+  50% {
+    background-position: 50% 0%;
+  }
+
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+
+@keyframes cameraup {
+  0% {
+    height: 0vh;
+  }
+
+  100% {
+    height: 100vh;
+  }
+}
+
+@keyframes navanimation {
+  0% {
+    margin-top: -58px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes expand {
+  0% {
+    background-size: 100% 100%;
+  }
+
+  100% {
+    background-size: 400% 400%;
+  }
+}
+
+@keyframes riverrun {
+  0% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    transform: rotate(-.5deg);
+  }
+
+  33.33% {
+    transform: rotate(1deg) scaleY(1);
+  }
+
+  50% {
+    transform: rotate(-.5deg);
+  }
+
+  66.66% {
+    transform: rotate(1deg) scaleY(0.9);
+  }
+
+  100% {
+    transform: rotate(-.5deg);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@media (min-width:320px) and (max-width:540px) {
+  .camply img {
+    top: 75%;
+  }
+
+  .waveimg {
+    height: 75px;
+  }
+
+  h1 {
+    font-size: 10px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .appstore{
+    width: 70%;
+  }
+}
+
+
+@media (min-width:541px) and (max-width:768px) {
+  .appstore{
+    width: 50%;
+  }
+}
+
+@media (min-width:769px) and (max-width:991px) {
+  .appstore{
+    width: 30%;
+  }
+  a{
+    font-size: small;
+  }
+}
+
+@media (min-width:992px) and (max-width:1400px) {
+  .appstore{
+    width: 50%;
+  }
+}
+
+@media (min-width:1401px) and (max-width:2600px) {
+  .appstore{
+    width: 30%;
+  }
+}
+
+.leftside {
+  height: 100vh;
+  opacity: 0;
+  padding: 0px 70px 0px 70px;
+  animation: appear 3s 15s;
+  animation-fill-mode: forwards;
+}
+
+
+.rightside {
+  height: 100vh;
+  opacity: 0;
+  animation: appear 3s 17s;
+  animation-fill-mode: forwards;
+}
+
+.iPhone{
+  width: 30%;
+}
